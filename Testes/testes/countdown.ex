@@ -6,5 +6,4 @@ defmodule Countdown do
     Process.sleep(1000)
     time(x-1)
   end
-
 end
