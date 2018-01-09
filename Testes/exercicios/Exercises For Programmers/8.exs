@@ -1,4 +1,5 @@
-# Pizza Party __________________________________________________________________
+# Pizza Party
+
 # Division isn’t always exact, and sometimes you’ll write
 # programs that will need to deal with the leftovers as a whole
 # number instead of a decimal.
