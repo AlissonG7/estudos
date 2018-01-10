@@ -25,19 +25,22 @@
 
 # Constraints___________________________________________________________________
 # • Implement this program using only a simple if state-
-# ment—don’t use an else clause.
+# ment—don’t use an else clause.tax*100
 # • Ensure that all money is rounded up to the nearest cent.
 # • Use a single output statement at the end of the program
 # to display the program results.
 
 {amount, _} = Float.parse(IO.gets("What is the order amount? "))
-state = IO.gets("What is the state? ")
+[state, _] = String.split(IO.gets("What is the state? "), "\n")
+subtotal = amount
+tax_percent = 0
 
 if state=="WI" do
-  subtotal
-  tax
+  tax_percent = 0.055
+  tax_subtotal = subtotal *  tax_percent
+  IO.puts("The subtotal is $#{:erlang.float_to_binary(Float.round(amount, 2), [decimals: 2])}.")
+  IO.puts("The tax is $#{:erlang.float_to_binary(Float.round(tax_subtotal, 2), [decimals: 2])}.")
 end
 
-#:erlang.float_to_binary(Float.ceil(
-
-IO.gets("The subtotal is #{subtotal}."
+total = (subtotal*tax_percent)+subtotal
+IO.gets("The total is $#{:erlang.float_to_binary(Float.round(total, 2), [decimals: 2])}.")
