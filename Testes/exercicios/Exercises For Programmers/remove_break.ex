@@ -1,5 +1,6 @@
 defmodule Unbreak do
   def string(x) do
-    String.replace_suffix(x, "\n", "")
+    [l,_]=String.split(x, "\n")
+    l
   end
 end

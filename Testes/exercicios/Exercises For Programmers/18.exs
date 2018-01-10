@@ -26,6 +26,7 @@
 
 IO.puts "Press C to convert from Fahrenheit to Celsius.\nPress F to convert from Celsius to Fahrenheit."
 [to_temp, _] = String.split(IO.gets("Your choice: "), "\n")
+to_temp=String.upcase(to_temp)
 cond do
   to_temp == "F" ->
     a = "Celsius"
