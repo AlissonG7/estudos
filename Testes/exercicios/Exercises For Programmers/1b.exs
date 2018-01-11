@@ -13,3 +13,5 @@ IO.inspect({input, greeting})
 if greeting==nil,
   do: IO.puts("It seems to be your first time here, #{input}. Welcome and enjoy."),
   else: IO.puts(greeting)
+
+Atom.to_string(atom)
