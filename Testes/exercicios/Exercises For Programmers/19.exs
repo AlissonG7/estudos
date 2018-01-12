@@ -25,17 +25,17 @@
 # let the user continue unless the data is valid.
 defmodule BMI do
   def run() do
-    with {weight, ""} <- read_float("Enter your weight (pounds): "),
-         {height, ""} <- read_float("Enter your height (inches): ") do
-      bmi = (weight / (height * height)) * 703
-      exibir_bmi(bmi)
-    else
-      {_, _} ->
-        IO.puts("Enter a valid number.")
-      :error ->
-        IO.puts("Enter a valid number.")
-    end
-
+    # with {weight, ""} <- read_float("Enter your weight (pounds): "),
+    #      {height, ""} <- read_float("Enter your height (inches): ") do
+    #   bmi = (weight / (height * height)) * 703
+    #   exibir_bmi(bmi)
+    # else
+    #   {_, _} ->
+    #     IO.puts("Enter a valid number.")
+    #   :error ->
+    #     IO.puts("Enter a valid number.")
+    # end
+    #
 
     case read_float("Enter your weight (pounds): ") do
       {weight,""} ->
