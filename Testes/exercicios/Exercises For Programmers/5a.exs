@@ -1,4 +1,4 @@
-# Revise the program to ensure that inputs are entered as
+# [ ] Revise the program to ensure that inputs are entered as
 # numeric values. Don’t allow the user to proceed if the
 # value entered is not numeric.
 

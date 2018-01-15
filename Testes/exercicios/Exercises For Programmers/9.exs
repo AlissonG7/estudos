@@ -14,8 +14,8 @@
 # round up to the next whole gallon.
 
 # Constraints___________________________________________________________________
-# • Use a constant to hold the conversion rate.
-# • Ensure that you round up to the next whole number.
+# [ ] Use a constant to hold the conversion rate.
+# [ ] Ensure that you round up to the next whole number.
 
 {length,_}=Float.parse(IO.gets("Room's length? "))
 {width,_}=Float.parse(IO.gets("Room's width? "))

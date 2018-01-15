@@ -20,8 +20,8 @@
 # Welcome!
 
 # Constraints___________________________________________________________________
-# • Use an if/else statement for this problem.
-# • Make sure the program is case sensitive.
+# [ ] Use an if/else statement for this problem.
+# [ ] Make sure the program is case sensitive.
 
 
 password = "Alemão"

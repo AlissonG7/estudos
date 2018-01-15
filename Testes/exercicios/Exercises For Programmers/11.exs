@@ -28,8 +28,8 @@
 # 111.38 U.S. dollars.
 
 # Constraints___________________________________________________________________
-# • Ensure that fractions of a cent are rounded up to the next penny.
-# • Use a single output statement.
+# [ ] Ensure that fractions of a cent are rounded up to the next penny.
+# [ ] Use a single output statement.
 
 {amount_from, _} = Float.parse(IO.gets("How many euros are you exchanging? "))
 {rate_from, _} = Float.parse(IO.gets("What is the exchange rate (from)? "))

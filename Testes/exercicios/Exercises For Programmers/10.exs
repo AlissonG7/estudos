@@ -20,11 +20,11 @@
 # Total: $67.52
 
 # Constraints___________________________________________________________________
-# • Keep the input, processing, and output parts of your
+# [ ] Keep the input, processing, and output parts of your
 # program separate. Collect the input, then do the math
 # operations and string building, and then print out the
 # output.
-# • Be sure you explicitly convert input to numerical data
+# [ ] Be sure you explicitly convert input to numerical data
 # before doing any calculations.
 
 {price_1,_} = Float.parse(IO.gets("Enter the price of item 1: "))

@@ -19,8 +19,8 @@
 # You are old enough to legally drive.
 
 # Constraints___________________________________________________________________
-# • Use a single output statement.
-# • Use a ternary operator to write this program. If your
+# [ ] Use a single output statement.
+# [ ] Use a ternary operator to write this program. If your
 # language doesn’t support a ternary operator, use a reg-
 # ular if/else statement, and still use a single output state-
 # ment to display the message.

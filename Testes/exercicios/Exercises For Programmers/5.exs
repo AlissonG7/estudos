@@ -16,7 +16,7 @@
 # 10 / 5 = 2
 
 # Constraints___________________________________________________________________
-# • Values coming from users will be strings. Ensure that
+# [ ] Values coming from users will be strings. Ensure that
 # you convert these values to numbers before doing the
 # math.
 
@@ -24,19 +24,17 @@
 # 5 = 5
 # 5 = 50
 # 5 = 2
-# • Keep the inputs and outputs separate from the numerical
+
+# [x] Keep the inputs and outputs separate from the numerical
 # conversions and other processing.
-# • Generate a single output statement with line breaks in
+# [x] Generate a single output statement with line breaks in
 # the appropriate spots.
 
-first_input = IO.gets "What is the first number? "
-second_input = IO.gets "What is the second number? "
+first_input = IO.gets("What is the first number? ")
+|> String.trim_trailing
+second_input = IO.gets("What is the second number? ")
+|> String.trim_trailing
 
-unbreak = fn x -> String.replace_suffix(x, "\n", "") end
-
-a = String.to_integer(unbreak.(first_input))
-b = String.to_integer(unbreak.(second_input))
-IO.puts("#{a} + #{b} = #{a+b}")
-IO.puts("#{a} - #{b} = #{a-b}")
-IO.puts("#{a} * #{b} = #{a*b}")
-IO.puts("#{a} / #{b} = #{a/b}")
+a = String.to_integer(first_input)
+b = String.to_integer(second_input)
+IO.puts("#{a} + #{b} = #{a+b}\n#{a} - #{b} = #{a-b}\n#{a} * #{b} = #{a*b}\n#{a} / #{b} = #{a/b}")

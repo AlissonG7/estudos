@@ -19,9 +19,9 @@
 # The temperature in Celsius is 0.
 
 # Constraints___________________________________________________________________
-# • Ensure that you allow upper or lowercase values for C
+# [ ] Ensure that you allow upper or lowercase values for C
 # and F .
-# • Use as few output statements as possible and avoid
+# [ ] Use as few output statements as possible and avoid
 # repeating output strings.
 
 IO.puts "Press C to convert from Fahrenheit to Celsius.\nPress F to convert from Celsius to Fahrenheit."

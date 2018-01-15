@@ -19,8 +19,8 @@
 # m² = f² X 0.09290304
 
 # Constraints
-# • Keep the calculations separate from the output.
-# • Use a constant to hold the conversion factor.
+# [x] Keep the calculations separate from the output.
+# [x] Use a constant to hold the conversion factor.
 
 {length,_} = Float.parse(IO.gets "What is the length of the room in feet? ")
 {width,_} = Float.parse(IO.gets "What is the width of the room in feet ")

@@ -1,4 +1,4 @@
-# Write a version of the program that displays different
+# [ ] Write a version of the program that displays different
 # greetings for different people.
 
 users=%{
@@ -7,9 +7,9 @@ users=%{
   "Luke" => "What's up, Luke?"
 }
 
-input = String.replace_suffix(IO.gets("What is your name? "), "\n", "")
+input = String.trim_trailing(IO.gets("What is your name? "))
 greeting = Map.get(users, input)
-IO.inspect({input, greeting})
+#IO.inspect({input, greeting})
 if greeting==nil,
   do: IO.puts("It seems to be your first time here, #{input}. Welcome and enjoy."),
   else: IO.puts(greeting)

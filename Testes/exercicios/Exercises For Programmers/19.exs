@@ -21,7 +21,7 @@
 # You are overweight. You should see your doctor.
 
 # Constraint____________________________________________________________________
-# • Ensure your program takes only numeric data. Don’t
+# [ ] Ensure your program takes only numeric data. Don’t
 # let the user continue unless the data is valid.
 defmodule BMI do
   def run() do

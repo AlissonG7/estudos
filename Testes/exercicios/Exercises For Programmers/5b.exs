@@ -1,4 +1,4 @@
-# Don’t allow the user to enter a negative number.
+# [ ] Don’t allow the user to enter a negative number.
 
 first_input = IO.gets "What is the first number? "
 second_input = IO.gets "What is the second number? "

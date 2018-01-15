@@ -24,10 +24,10 @@
 # The total is $10.00
 
 # Constraints___________________________________________________________________
-# • Implement this program using only a simple if state-
+# [ ] Implement this program using only a simple if state-
 # ment—don’t use an else clause.tax*100
-# • Ensure that all money is rounded up to the nearest cent.
-# • Use a single output statement at the end of the program
+# [ ] Ensure that all money is rounded up to the nearest cent.
+# [ ] Use a single output statement at the end of the program
 # to display the program results.
 
 {amount, _} = Float.parse(IO.gets("What is the order amount? "))

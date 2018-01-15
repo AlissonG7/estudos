@@ -1,4 +1,4 @@
-# Modify this program so that
+# [ ] Modify this program so that
 # instead of prompting for quotes from the user, you cre-
 # ate a structure that holds quotes and their associated
 # attributions and then display all of the quotes using the
@@ -20,5 +20,4 @@ quotes = %{
 }
 
 {author, quote} = Enum.random(quotes)
-
 IO.puts("#{author} says, \"#{quote}\"")

@@ -20,11 +20,11 @@
 # be worth $1758.
 
 # Constraints___________________________________________________________________
-# • Prompt for the rate as a percentage (like 15 , not .15 ).
+# [ ] Prompt for the rate as a percentage (like 15 , not .15 ).
 # Divide the input by 100 in your program.
-# • Ensure that fractions of a cent are rounded up to the
+# [ ] Ensure that fractions of a cent are rounded up to the
 # next penny.
-# • Ensure that the output is formatted as money.
+# [ ] Ensure that the output is formatted as money.
 
 {principal,_} = Float.parse(IO.gets("Enter the principal: "))
 {rate,_} = Float.parse(IO.gets("Enter the rate of interest (%): "))
