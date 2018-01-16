@@ -25,11 +25,21 @@
 # [ ] Ensure that fractions of a cent are rounded up to the
 # next penny.
 # [ ] Ensure that the output is formatted as money.
+defmodule SimpleInterest do
+  def calc do
 
-{principal,_} = Float.parse(IO.gets("Enter the principal: "))
-{rate,_} = Float.parse(IO.gets("Enter the rate of interest (%): "))
-{time,_} = Integer.parse(IO.gets("Enter the number of years: "))
+    {principal,_} = Float.parse(IO.gets("Enter the principal: "))
+    {rate,_} = Float.parse(IO.gets("Enter the rate of interest (%): "))
+    {time,_} = Integer.parse(IO.gets("Enter the number of years: "))
 
-amount = :erlang.float_to_binary(Float.ceil(principal*(1+(rate/100)*time), 2), [decimals: 2])
+    amount = principal*(1+(rate/100)*time)
+    |> Float.ceil(2)
+    |> :erlang.float_to_binary([decimals: 2])
 
-IO.puts "After #{time} years at #{rate}%, the investiment will be worth $#{amount}"
+    # Converts to string, keeps only desired decimals. e.g.:
+    # :erlang.float_to_binary(1.2345, [decimals: 2])
+    # iex>1.23
+
+    IO.puts "After #{time} years at #{rate}%, the investiment will be worth $#{amount}"
+  end
+end
